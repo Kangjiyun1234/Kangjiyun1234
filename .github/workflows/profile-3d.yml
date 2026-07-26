@@ -71,6 +71,78 @@ jobs:
           )
           PY
 
+            - name: Enlarge date text
+              run: |
+                python <<'PY'
+                import re
+                import xml.etree.ElementTree as ET
+                from pathlib import Path
+      
+                svg_path = Path("profile-3d-contrib/profile-pink.svg")
+      
+                if not svg_path.exists():
+                    raise FileNotFoundError(
+                        f"생성된 SVG 파일을 찾을 수 없습니다: {svg_path}"
+                    )
+      
+                ET.register_namespace("", "http://www.w3.org/2000/svg")
+                ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
+      
+                tree = ET.parse(svg_path)
+                root = tree.getroot()
+      
+                def local_name(tag):
+                    return tag.rsplit("}", 1)[-1]
+      
+                date_pattern = re.compile(
+                    r"\d{4}-\d{2}-\d{2}\s*/\s*\d{4}-\d{2}-\d{2}"
+                )
+      
+                found = False
+      
+                for element in root.iter():
+                    if local_name(element.tag) != "text":
+                        continue
+      
+                    text = "".join(element.itertext()).strip()
+      
+                    if date_pattern.fullmatch(text):
+                        style = element.get("style", "")
+      
+                        if "font-size" in style:
+                            style = re.sub(
+                                r"font-size\s*:\s*[^;]+",
+                                "font-size: 18px",
+                                style
+                            )
+                        else:
+                            style += "; font-size: 18px"
+      
+                        if "font-weight" in style:
+                            style = re.sub(
+                                r"font-weight\s*:\s*[^;]+",
+                                "font-weight: 600",
+                                style
+                            )
+                        else:
+                            style += "; font-weight: 600"
+      
+                        element.set("style", style.strip("; "))
+                        found = True
+                        break
+      
+                if not found:
+                    raise RuntimeError("날짜 텍스트를 찾지 못했습니다.")
+      
+                tree.write(
+                    svg_path,
+                    encoding="utf-8",
+                    xml_declaration=True
+                )
+      
+                print("날짜 크기 수정 완료")
+                PY
+
       - name: Commit and push generated graph
         run: |
           git config user.name github-actions
