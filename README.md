@@ -28,26 +28,26 @@ AI 서버 연동, 외부 API, IoT/oneM2M 구조를 공부하고 있습니다.
 
 ### Backend
 <p>
-  <img src="https://img.shields.io/badge/Java-F3E8FF?style=for-the-badge&logo=openjdk&logoColor=5B21B6"/>
-  <img src="https://img.shields.io/badge/Spring%20Boot-EDE9FE?style=for-the-badge&logo=springboot&logoColor=6D28D9"/>
-  <img src="https://img.shields.io/badge/Python-F5F3FF?style=for-the-badge&logo=python&logoColor=7C3AED"/>
-  <img src="https://img.shields.io/badge/FastAPI-EDE9FE?style=for-the-badge&logo=fastapi&logoColor=6D28D9"/>
+  <img src="https://img.shields.io/badge/Java-EDE9FE?style=for-the-badge&logo=openjdk&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/Spring%20Boot-F7FFF7?style=for-the-badge&logo=springboot&logoColor=7FAE82"/>
+  <img src="https://img.shields.io/badge/Python-EDE9FE?style=for-the-badge&logo=python&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/FastAPI-EDE9FE?style=for-the-badge&logo=fastapi&logoColor=7C3AED"/>
 </p>
 
 ### Database & Infra
 <p>
-  <img src="https://img.shields.io/badge/PostgreSQL-F3E8FF?style=for-the-badge&logo=postgresql&logoColor=5B21B6"/>
-  <img src="https://img.shields.io/badge/MySQL-EDE9FE?style=for-the-badge&logo=mysql&logoColor=6D28D9"/>
-  <img src="https://img.shields.io/badge/Redis-F5F3FF?style=for-the-badge&logo=redis&logoColor=7C3AED"/>
-  <img src="https://img.shields.io/badge/Docker-EDE9FE?style=for-the-badge&logo=docker&logoColor=6D28D9"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-EDE9FE?style=for-the-badge&logo=postgresql&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/MySQL-EDE9FE?style=for-the-badge&logo=mysql&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/Redis-F7FFF7?style=for-the-badge&logo=redis&logoColor=7FAE82"/>
+  <img src="https://img.shields.io/badge/Docker-EDE9FE?style=for-the-badge&logo=docker&logoColor=7C3AED"/>
 </p>
 
 ### Tools
 <p>
-  <img src="https://img.shields.io/badge/Git-F3E8FF?style=for-the-badge&logo=git&logoColor=5B21B6"/>
-  <img src="https://img.shields.io/badge/GitHub-EDE9FE?style=for-the-badge&logo=github&logoColor=6D28D9"/>
-  <img src="https://img.shields.io/badge/GitHub%20Actions-F5F3FF?style=for-the-badge&logo=githubactions&logoColor=7C3AED"/>
-  <img src="https://img.shields.io/badge/Swagger-EDE9FE?style=for-the-badge&logo=swagger&logoColor=6D28D9"/>
+  <img src="https://img.shields.io/badge/Git-F7FFF7?style=for-the-badge&logo=git&logoColor=7FAE82"/>
+  <img src="https://img.shields.io/badge/GitHub-EDE9FE?style=for-the-badge&logo=github&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/GitHub%20Actions-EDE9FE?style=for-the-badge&logo=githubactions&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/Swagger-EDE9FE?style=for-the-badge&logo=swagger&logoColor=7C3AED"/>
 </p>
 
 ---
