@@ -14,38 +14,23 @@ jobs:
     name: generate-github-profile-3d-contrib
 
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout repository
+        uses: actions/checkout@v5
 
-      - uses: yoshi389111/github-profile-3d-contrib@latest
+      - name: Generate pink contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: profile-settings.json
 
-      - name: Change contribution graph to pink
-        run: |
-          python <<'PY'
-          from pathlib import Path
-
-          color_map = {
-              "#ebedf0": "#FDF2F8",  # 가장 연한 칸
-              "#9be9a8": "#FBCFE8",
-              "#40c463": "#F9A8D4",
-              "#30a14e": "#EC4899",
-              "#216e39": "#BE185D"   # 가장 진한 칸
-          }
-
-          for path in Path("profile-3d-contrib").glob("*.svg"):
-              text = path.read_text(encoding="utf-8")
-              for old, new in color_map.items():
-                  text = text.replace(old, new)
-              path.write_text(text, encoding="utf-8")
-          PY
-
-      - name: Commit & Push
+      - name: Commit and push generated graph
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          if git commit -m "generated"; then
+
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update pink contribution graph"
             git push
           fi
