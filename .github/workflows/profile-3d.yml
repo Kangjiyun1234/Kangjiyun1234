@@ -11,7 +11,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
 
     steps:
       - name: Checkout repository
@@ -24,11 +23,10 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: profile-settings.json
 
-      - name: Change language graph colors to pastel
+      - name: Change language chart colors to pastel
         run: |
           python <<'PY'
           import re
-          import xml.etree.ElementTree as ET
           from pathlib import Path
 
           svg_path = Path("profile-3d-contrib/profile-pink.svg")
@@ -38,104 +36,38 @@ jobs:
                   f"생성된 SVG 파일을 찾을 수 없습니다: {svg_path}"
               )
 
-          # 언어별로 순서대로 적용될 파스텔 색상
-          pastel_colors = [
-              "#CDB4DB",  # 라벤더
-              "#FFC8DD",  # 연핑크
-              "#BDE0FE",  # 파우더 블루
-              "#FFE5B4",  # 피치
-              "#CDEAC0",  # 연민트
-              "#E2D1F9"   # 연보라: other
-          ]
-
-          ET.register_namespace("", "http://www.w3.org/2000/svg")
-          ET.register_namespace(
-              "xlink",
-              "http://www.w3.org/1999/xlink"
-          )
-
-          tree = ET.parse(svg_path)
-          root = tree.getroot()
-
-          def local_name(tag):
-              return tag.rsplit("}", 1)[-1]
-
-          # 각 요소의 부모를 찾기 위한 맵
-          parent_map = {
-              child: parent
-              for parent in root.iter()
-              for child in parent
+          # 기존 GitHub 언어 색상 → 파스텔 색상
+          language_colors = {
+              "#b07219": "#D8B4FE",  # Java: 연보라
+              "#3572A5": "#F9A8D4",  # Python: 연핑크
+              "#555555": "#BFDBFE",  # C: 파스텔 블루
+              "#3178C6": "#FDE68A",  # TypeScript: 파스텔 옐로
+              "#E34C26": "#A7F3D0",  # HTML: 파스텔 민트
+              "#444444": "#E9D5FF"   # Other: 아주 연한 보라
           }
 
-          # title을 자식으로 가진 path가 언어 원형 그래프 조각
-          pie_paths = []
+          svg = svg_path.read_text(encoding="utf-8")
+          total_replaced = 0
 
-          for element in root.iter():
-              if local_name(element.tag) != "path":
-                  continue
-
-              has_title = any(
-                  local_name(child.tag) == "title"
-                  for child in element
+          for old_color, new_color in language_colors.items():
+              svg, replaced_count = re.subn(
+                  re.escape(old_color),
+                  new_color,
+                  svg,
+                  flags=re.IGNORECASE
               )
+              total_replaced += replaced_count
 
-              if has_title:
-                  pie_paths.append(element)
-
-          if not pie_paths:
-              raise RuntimeError("언어 원형 그래프를 찾지 못했습니다.")
-
-          if len(pie_paths) > len(pastel_colors):
+          if total_replaced == 0:
               raise RuntimeError(
-                  "언어 개수보다 준비된 파스텔 색상이 적습니다."
+                  "언어 그래프 색상을 찾지 못했습니다."
               )
 
-          # 원형 그래프 전체 그룹 찾기
-          pie_path_group = parent_map[pie_paths[0]]
-          pie_root_group = parent_map[pie_path_group]
-
-          # 같은 그룹 내부의 범례 사각형 찾기
-          legend_rects = [
-              element
-              for element in pie_root_group.iter()
-              if local_name(element.tag) == "rect"
-          ]
-
-          if len(legend_rects) < len(pie_paths):
-              raise RuntimeError("언어 범례를 모두 찾지 못했습니다.")
-
-          # 원형 그래프 색상 변경
-          for index, path in enumerate(pie_paths):
-              color = pastel_colors[index]
-              style = path.get("style", "")
-
-              if re.search(r"fill\s*:", style):
-                  style = re.sub(
-                      r"fill\s*:\s*[^;]+",
-                      f"fill: {color}",
-                      style,
-                      count=1
-                  )
-              else:
-                  style = f"{style}; fill: {color}".strip("; ")
-
-              path.set("style", style)
-
-          # 언어 이름 옆 범례 색상 변경
-          for index, rect in enumerate(
-              legend_rects[:len(pie_paths)]
-          ):
-              rect.set("fill", pastel_colors[index])
-
-          tree.write(
-              svg_path,
-              encoding="utf-8",
-              xml_declaration=True
-          )
+          svg_path.write_text(svg, encoding="utf-8")
 
           print(
-              f"{len(pie_paths)}개의 언어 그래프 색상을 "
-              "파스텔 톤으로 변경했습니다."
+              f"언어 그래프 색상 {total_replaced}곳을 "
+              "파스텔 색상으로 변경했습니다."
           )
           PY
 
@@ -147,6 +79,6 @@ jobs:
           git add -A .
 
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update pink contribution graph"
+            git commit -m "style: update pastel language chart"
             git push
           fi
