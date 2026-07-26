@@ -29,7 +29,7 @@ AI 서버 연동, 외부 API, IoT/oneM2M 구조를 공부하고 있습니다.
 ### Backend
 <p>
   <img src="https://img.shields.io/badge/Java-EDE9FE?style=for-the-badge&logo=openjdk&logoColor=7C3AED"/>
-  <img src="https://img.shields.io/badge/Spring%20Boot-F1F5EC?style=for-the-badge&logo=springboot&logoColor=DDE7D8"/>
+  <img src="https://img.shields.io/badge/Spring%20Boot-F1F5EC?style=for-the-badge&logo=springboot&logoColor=879A80"/>
   <img src="https://img.shields.io/badge/Python-EDE9FE?style=for-the-badge&logo=python&logoColor=7C3AED"/>
   <img src="https://img.shields.io/badge/FastAPI-EDE9FE?style=for-the-badge&logo=fastapi&logoColor=7C3AED"/>
 </p>
@@ -38,13 +38,13 @@ AI 서버 연동, 외부 API, IoT/oneM2M 구조를 공부하고 있습니다.
 <p>
   <img src="https://img.shields.io/badge/PostgreSQL-EDE9FE?style=for-the-badge&logo=postgresql&logoColor=7C3AED"/>
   <img src="https://img.shields.io/badge/MySQL-EDE9FE?style=for-the-badge&logo=mysql&logoColor=7C3AED"/>
-  <img src="https://img.shields.io/badge/Redis-F1F5EC?style=for-the-badge&logo=redis&logoColor=DDE7D8"/>
+  <img src="https://img.shields.io/badge/Redis-F1F5EC?style=for-the-badge&logo=redis&logoColor=879A80"/>
   <img src="https://img.shields.io/badge/Docker-EDE9FE?style=for-the-badge&logo=docker&logoColor=7C3AED"/>
 </p>
 
 ### Tools
 <p>
-  <img src="https://img.shields.io/badge/Git-F1F5EC?style=for-the-badge&logo=git&logoColor=DDE7D8"/>
+  <img src="https://img.shields.io/badge/Git-F1F5EC?style=for-the-badge&logo=git&logoColor=879A80"/>
   <img src="https://img.shields.io/badge/GitHub-EDE9FE?style=for-the-badge&logo=github&logoColor=7C3AED"/>
   <img src="https://img.shields.io/badge/GitHub%20Actions-EDE9FE?style=for-the-badge&logo=githubactions&logoColor=7C3AED"/>
   <img src="https://img.shields.io/badge/Swagger-EDE9FE?style=for-the-badge&logo=swagger&logoColor=7C3AED"/>
