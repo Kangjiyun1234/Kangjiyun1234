@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:E9D5FF,100:C4B5FD&height=220&section=header&text=Jiyun%20Kang&fontSize=48&fontColor=5B4B8A&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20%7C%20Spring%20Boot%20%C2%B7%20FastAPI%20%C2%B7%20oneM2M&descAlignY=60&descSize=17&descColor=6D5FA8)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:E9D5FF,100:C4B5FD&height=220&section=header&text=Jiyun%20Kang&fontSize=48&fontColor=5B4B8A&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20%7C%20Spring%20Boot%20%C2%B7%20FastAPI%20%C2%B7%20oneM2M&descAlignY=60&descSize=17&descColor=F1F5EC)
 
 <div align="center">
 
