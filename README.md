@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:E9D5FF,100:C4B5FD&height=220&section=header&text=Jiyun%20Kang&fontSize=48&fontColor=5B4B8A&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20%7C%20Spring%20Boot%20%C2%B7%20FastAPI%20%C2%B7%20oneM2M&descAlignY=60&descSize=17&descColor=DDE7D8)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:E9D5FF,100:C4B5FD&height=220&section=header&text=Jiyun%20Kang&fontSize=48&fontColor=5B4B8A&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20%7C%20Spring%20Boot%20%C2%B7%20FastAPI%20%C2%B7%20oneM2M&descAlignY=60&descSize=17&descColor=5B4B8A)
 
 <div align="center">
 
@@ -9,7 +9,7 @@ AI 서버 연동, 외부 API, IoT/oneM2M 구조를 공부하고 있습니다.
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Kangjiyun1234&label=Profile%20Views&color=DDE7D8&style=flat" alt="profile views"/>
+<img src="https://komarev.com/ghpvc/?username=Kangjiyun1234&label=Profile%20Views&color=FBCFE8&style=flat" alt="profile views"/>
 
 </div>
 
