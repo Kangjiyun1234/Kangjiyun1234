@@ -73,12 +73,6 @@ AI 서버 연동, 외부 API, IoT/oneM2M 구조를 공부하고 있습니다.
 
 <br/><br/>
 
-<img src="https://ghchart.rshah.org/E879A9/Kangjiyun1234"
-     width="100%"
-     alt="Kangjiyun1234's pink GitHub contribution chart"/>
-
-<br/><br/>
-
 <img height="165"
      src="https://github-readme-stats.vercel.app/api?username=Kangjiyun1234&show_icons=true&theme=midnight-purple&hide_border=true"/>
 
