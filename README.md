@@ -1,71 +1,67 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:86EFAC&height=190&section=header&text=Jiyun%20Kang&fontSize=48&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20%7C%20Spring%20Boot%20%C2%B7%20FastAPI%20%C2%B7%20oneM2M&descAlignY=61&descSize=17)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:E9D5FF,100:C4B5FD&height=220&section=header&text=Jiyun%20Kang&fontSize=48&fontColor=5B4B8A&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20%7C%20Spring%20Boot%20%C2%B7%20FastAPI%20%C2%B7%20oneM2M&descAlignY=60&descSize=17&descColor=6D5FA8)
 
 <div align="center">
 
-### 안정적인 서비스 흐름을 고민하는 백엔드 개발자 강지윤입니다.
+### 💜 기록하고, 연결하고, 더 나은 구조를 고민하는 개발자 강지윤입니다.
 
-Spring Boot 기반의 백엔드 개발과  
-AI 서버·외부 API·IoT 시스템 연동을 공부하고 있습니다.
+백엔드 개발을 중심으로  
+AI 서버 연동, 외부 API, IoT/oneM2M 구조를 공부하고 있습니다.
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Kangjiyun1234&label=Profile%20Views&color=0F766E&style=flat" alt="profile views"/>
+<img src="https://komarev.com/ghpvc/?username=Kangjiyun1234&label=Profile%20Views&color=A78BFA&style=flat" alt="profile views"/>
 
 </div>
 
-<br/>
+---
 
-## 👋 About Me
+## ☁️ About Me
 
-- Java와 Spring Boot를 활용해 REST API를 개발합니다.
-- 인증·인가, 소셜 로그인, 외부 API 및 AI 서버 연동을 경험했습니다.
-- Python 기반 Federated Learning과 oneM2M IoT 구조를 공부하고 있습니다.
-- Issue → Branch → Pull Request → Review로 이어지는 협업 과정을 중요하게 생각합니다.
-- 동작하는 코드를 넘어 유지보수하기 좋은 구조를 고민합니다.
+- Java & Spring Boot 기반의 백엔드 개발을 합니다.
+- 인증/인가, 소셜 로그인, AI 서버 연동을 구현해봤습니다.
+- Python 기반 Federated Learning과 oneM2M 구조를 공부하고 있습니다.
+- 협업 과정에서 **가독성 좋은 코드와 유지보수 가능한 구조**를 중요하게 생각합니다.
 
-<br/>
+---
 
-## 🛠 Tech Stack
+## 🪻 Tech Stack
 
 ### Backend
-
 <p>
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Java-F3E8FF?style=for-the-badge&logo=openjdk&logoColor=5B21B6"/>
+  <img src="https://img.shields.io/badge/Spring%20Boot-EDE9FE?style=for-the-badge&logo=springboot&logoColor=6D28D9"/>
+  <img src="https://img.shields.io/badge/Python-F5F3FF?style=for-the-badge&logo=python&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/FastAPI-EDE9FE?style=for-the-badge&logo=fastapi&logoColor=6D28D9"/>
 </p>
 
-### Database & Infrastructure
-
+### Database & Infra
 <p>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-F3E8FF?style=for-the-badge&logo=postgresql&logoColor=5B21B6"/>
+  <img src="https://img.shields.io/badge/MySQL-EDE9FE?style=for-the-badge&logo=mysql&logoColor=6D28D9"/>
+  <img src="https://img.shields.io/badge/Redis-F5F3FF?style=for-the-badge&logo=redis&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/Docker-EDE9FE?style=for-the-badge&logo=docker&logoColor=6D28D9"/>
 </p>
 
-### Collaboration
-
+### Tools
 <p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Git-F3E8FF?style=for-the-badge&logo=git&logoColor=5B21B6"/>
+  <img src="https://img.shields.io/badge/GitHub-EDE9FE?style=for-the-badge&logo=github&logoColor=6D28D9"/>
+  <img src="https://img.shields.io/badge/GitHub%20Actions-F5F3FF?style=for-the-badge&logo=githubactions&logoColor=7C3AED"/>
+  <img src="https://img.shields.io/badge/Swagger-EDE9FE?style=for-the-badge&logo=swagger&logoColor=6D28D9"/>
 </p>
 
-<br/>
+---
 
-## 🚀 Featured Projects
+## 🌙 Featured Projects
 
 | Project | Description | Tech |
 |:---|:---|:---|
-| [어대고 BE](https://github.com/eodaego/eodaego-BE) | AI 기반 여행 코스 추천 서비스 백엔드<br/>인증, 외부 API 및 AI 서버 연동 | Java, Spring Boot, PostgreSQL |
-| [DonTouch BE](https://github.com/TEAM-DonTouch/DonTouch-BE) | 소비 관리 서비스 백엔드<br/>회원가입과 소셜 로그인 기능 개발 | Java, Spring Boot, JWT, OAuth |
-| [Federated Learning](https://github.com/Kangjiyun1234/FL) | oneM2M 환경에서 연합학습과 장애 감지 흐름을 실험하는 프로젝트 | Python, FastAPI, oneM2M |
-| [tinyIoT](https://github.com/seslabSJU/tinyIoT) | oneM2M TinyIoT 오픈소스 분석 및 Hybrid Addressing 개선 기여 | C, oneM2M |
+| [eodaego-BE](https://github.com/eodaego/eodaego-BE) | AI 기반 여행 코스 추천 서비스 백엔드 | Java, Spring Boot, PostgreSQL |
+| [DonTouch-BE](https://github.com/TEAM-DonTouch/DonTouch-BE) | 소비 관리 서비스 백엔드 / 소셜 로그인 구현 | Java, Spring Boot, JWT, OAuth |
+| [FL](https://github.com/Kangjiyun1234/FL) | oneM2M 환경에서 연합학습과 장애 감지 흐름 실험 | Python, FastAPI |
+| [tinyIoT](https://github.com/seslabSJU/tinyIoT) | oneM2M TinyIoT 분석 및 개선 기여 | C, oneM2M |
 
-<br/>
+---
 
 ## 📊 GitHub Status
 
@@ -75,29 +71,28 @@ AI 서버·외부 API·IoT 시스템 연동을 공부하고 있습니다.
 
 <br/><br/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Kangjiyun1234&show_icons=true&theme=vue&hide_border=true" alt="GitHub stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kangjiyun1234&layout=compact&theme=vue&hide_border=true" alt="Top languages"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Kangjiyun1234&show_icons=true&theme=midnight-purple&hide_border=true"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kangjiyun1234&layout=compact&theme=midnight-purple&hide_border=true"/>
 
 </div>
 
-<br/>
+---
 
 ## 📚 Currently Learning
 
-- Spring Transaction과 동시성 제어
-- OAuth 2.0 및 소셜 로그인 구조
-- oneM2M 기반 IoT 시스템
+- Spring Transaction
+- OAuth 2.0 & Social Login
+- oneM2M Architecture
 - Federated Learning
-- 테스트 가능한 백엔드 아키텍처
+- Testable Backend Design
 
-<br/>
+---
 
-## 📫 Contact
+## 💌 Contact
 
 - Email: `YOUR_EMAIL`
-- Blog: `YOUR_BLOG_LINK`
 - Portfolio: `YOUR_PORTFOLIO_LINK`
 
-<br/>
+---
 
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:86EFAC&height=110&section=footer)
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:E9D5FF,100:C4B5FD&height=140&section=footer)
