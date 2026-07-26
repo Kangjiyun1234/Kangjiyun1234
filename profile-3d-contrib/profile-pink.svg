@@ -4,18 +4,18 @@
 .stroke-fg { stroke: #6D5A78; }
 .fill-bg { fill: #FFFFFF; }
 .stroke-bg { stroke: #FFFFFF; }
-.fill-strong { fill: #CFE8CF; }
-.fill-weak { fill: #EEF8EE; }
-.stroke-weak { stroke: #EEF8EE; }
+.fill-strong { fill: #8B5E9C; }
+.fill-weak { fill: #DDE7D8; }
+.stroke-weak { stroke: #DDE7D8; }
 .radar {
 stroke-width: 4px;
 stroke: #F0A8D0;
 fill: #F0A8D0;
 fill-opacity: 0.5;
 }
-.cont-top-0 { fill: rgb(247, 255, 247); }
-.cont-left-0 { fill: rgb(207, 213, 207); }
-.cont-right-0 { fill: rgb(173, 179, 173); }
+.cont-top-0 { fill: rgb(241, 245, 236); }
+.cont-left-0 { fill: rgb(202, 205, 197); }
+.cont-right-0 { fill: rgb(169, 172, 165); }
 .cont-top-1 { fill: rgb(252, 231, 243); }
 .cont-left-1 { fill: rgb(211, 193, 203); }
 .cont-right-1 { fill: rgb(176, 162, 170); }
