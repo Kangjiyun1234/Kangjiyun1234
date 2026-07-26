@@ -21,6 +21,26 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
+      - name: Change contribution graph to pink
+        run: |
+          python <<'PY'
+          from pathlib import Path
+
+          color_map = {
+              "#ebedf0": "#FDF2F8",  # 가장 연한 칸
+              "#9be9a8": "#FBCFE8",
+              "#40c463": "#F9A8D4",
+              "#30a14e": "#EC4899",
+              "#216e39": "#BE185D"   # 가장 진한 칸
+          }
+
+          for path in Path("profile-3d-contrib").glob("*.svg"):
+              text = path.read_text(encoding="utf-8")
+              for old, new in color_map.items():
+                  text = text.replace(old, new)
+              path.write_text(text, encoding="utf-8")
+          PY
+
       - name: Commit & Push
         run: |
           git config user.name github-actions
