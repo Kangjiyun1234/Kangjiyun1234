@@ -9,7 +9,7 @@ AI 서버 연동, 외부 API, IoT/oneM2M 구조를 공부하고 있습니다.
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Kangjiyun1234&label=Profile%20Views&color=A78BFA&style=flat" alt="profile views"/>
+<img src="https://komarev.com/ghpvc/?username=Kangjiyun1234&label=Profile%20Views&color=879A80&style=flat" alt="profile views"/>
 
 </div>
 
