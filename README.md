@@ -67,7 +67,7 @@ AI 서버 연동, 외부 API, IoT/oneM2M 구조를 공부하고 있습니다.
 
 <div align="center">
 
-<img src="./profile-3d-contrib/profile-green-animate.svg" width="100%" alt="3D contribution graph"/>
+<img src="./profile-3d-contrib/profile-pink.svg" width="100%" alt="Pink 3D contribution graph"/>
 
 <br/><br/>
 
